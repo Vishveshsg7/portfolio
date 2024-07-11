@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Data Scientist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #282828;
+            color: #f4f4f4;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?concert,rock') no-repeat center center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-family: 'Impact', sans-serif;
+            color: #ff6600;
+        }
+        header p {
+            font-size: 1.5rem;
+            color: #f4f4f4;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #ff6600;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 3rem;
+            background: #1e1e1e;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Impact', sans-serif;
+        }
+        .skills, .projects, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill, .project, .testimonial {
+            flex: 1 1 45%;
+            margin: 1%;
+            padding: 1rem;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .skill:hover, .project:hover, .testimonial:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .project p, .testimonial p {
+            margin-top: 0.5rem;
+        }
+        .testimonial {
+            text-align: center;
+            color: #ff6600;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #444;
+            color: white;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .skills, .projects, .testimonials {
+                flex-direction: column;
+            }
+            .skill, .project, .testimonial {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Data Scientist | Machine Learning Enthusiast | Rock Music Fan</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm John Doe, a passionate data scientist with expertise in machine learning, data analysis, and predictive modeling. I have a strong background in mathematics and computer science, and I enjoy using data to solve real-world problems. I'm also a big fan of rock music and love attending concerts and collecting vinyl records.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Programming Languages</h3>
+                    <p>Python, R, SQL, Java</p>
+                </div>
+                <div class="skill">
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, NumPy, Matplotlib, Seaborn</p>
+                </div>
+                <div class="skill">
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-Learn, TensorFlow, Keras</p>
+                </div>
+                <div class="skill">
+                    <h3>Data Visualization</h3>
+                    <p>Tableau, Power BI, D3.js</p>
+                </div>
+                <div class="skill">
+                    <h3>Big Data Technologies</h3>
+                    <p>Hadoop, Spark, Hive</p>
+                </div>
+                <div class="skill">
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS, Google Cloud, Azure</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://source.unsplash.com/600x400/?coding,project" alt="Project 1">
+                    <h3>Sales Forecasting Model</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning techniques. Improved accuracy by 20% compared to previous models.</p>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/600x400/?data,analysis" alt="Project 2">
+                    <h3>Customer Segmentation</h3>
+                    <p>Performed customer segmentation analysis for a retail company using clustering algorithms. Helped target marketing campaigns more effectively.</p>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/600x400/?data,visualization" alt="Project 3">
+                    <h3>Real-time Data Dashboard</h3>
+                    <p>Created a real-time data visualization dashboard for monitoring key performance indicators using Tableau and D3.js.</p>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/600x400/?cloud,computing" alt="Project 4">
+                    <h3>Cloud-based Data Pipeline</h3>
+                    <p>Implemented a scalable data pipeline on AWS to process and analyze large datasets in real-time.</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"John is an outstanding data scientist with a deep understanding of machine learning and data analysis. He consistently delivers high-quality results."</p>
+                    <p>- Jane Smith, Colleague</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Working with John was a pleasure. His expertise in data visualization helped us uncover valuable insights that drove our business forward."</p>
+                    <p>- Mike Johnson, Client</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch with me, please email me at <a href="mailto:johndoe@example.com">johndoe@example.com</a> or connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
